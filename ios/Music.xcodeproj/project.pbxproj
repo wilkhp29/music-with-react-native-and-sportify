@@ -68,7 +68,7 @@
 		DE95E06CFD650949854434E1 /* Pods-Music-MusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music-MusicTests.debug.xcconfig"; path = "Target Support Files/Pods-Music-MusicTests/Pods-Music-MusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EE394936A235469ABC0DFF65 /* FontsFree-Net-SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "FontsFree-Net-SFProDisplay-Regular.ttf"; path = "../Src/Assets/fonts/FontsFree-Net-SFProDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE394936A235469ABC0DFF65 /* FontsFree-Net-SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "FontsFree-Net-SFProDisplay-Regular.ttf"; path = "../Src/Assets/fonts/FontsFree-Net-SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,18 +197,16 @@
 				4BE18B8B437746F69BD0681A /* Pods-Music-tvOSTests.debug.xcconfig */,
 				8380C2A3EA576BCC10E13C24 /* Pods-Music-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		DFF8FFF17318469693B1955C /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				EE394936A235469ABC0DFF65 /* FontsFree-Net-SFProDisplay-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 

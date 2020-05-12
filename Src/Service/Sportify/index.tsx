@@ -12,9 +12,9 @@ const Spotfy: Spotfy = NativeModules.RNSpotifyRemoto;
 
 export const Login = Spotfy.Login;
 export const GetToken = Spotfy.GetToken;
-export const Play = Spotfy.GetToken;
-export const Pause = Spotfy.GetToken;
-export const Next = Spotfy.GetToken;
-export const Preview = Spotfy.GetToken;
+export const Play = Spotfy.Play;
+export const Pause = Spotfy.Pause;
+export const Next = Spotfy.Next;
+export const Preview = Spotfy.Preview;
 
 export default Spotfy;
