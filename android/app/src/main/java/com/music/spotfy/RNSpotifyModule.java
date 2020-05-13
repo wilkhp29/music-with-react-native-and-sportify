@@ -130,8 +130,8 @@ public class RNSpotifyModule extends ReactContextBaseJavaModule {
                     if (track != null) {
                         WritableMap params = Arguments.createMap();
                         Gson gson = new Gson();
-                        params.putString("Track", gson.toJson(track).toString());
-                        sendEvent(Reactcontext, "MusicListner", params);
+                        params.putString("Track", gson.toJson(playerState).toString());
+                        sendEvent(Reactcontext, "States", params);
                     }
                 });
             } else {
@@ -143,6 +143,7 @@ public class RNSpotifyModule extends ReactContextBaseJavaModule {
             }
         }
     }
+
 
     @ReactMethod
     public void Pause() {
