@@ -1,5 +1,7 @@
 import React, {FC} from 'react';
-import {Login as logar, Play} from '../../Service/Sportify';
+import {Login as logar} from '../../Service/Sportify';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackParamList} from '../../../App';
 import {
   Container,
   ContainerImg,
@@ -10,17 +12,22 @@ import {
   TextButton,
 } from './styles';
 
-const Login: FC = () => {
+type ProfileScreenNavigationProp = StackNavigationProp<
+  RootStackParamList,
+  'Login'
+>;
+
+type Props = {
+  navigation: ProfileScreenNavigationProp;
+};
+
+const Login: FC<Props> = ({navigation}) => {
   async function handlerLogin() {
     try {
-      const response: string = await logar(
-        '84067b11c37b461685389e75d9772c68',
-        'com.music:/auth',
-      );
+      const response: string = await logar('keu public', 'redirect');
 
-      Play('spotify:playlist:5iAvq0CKsofmdWjtKamNe0');
       if (response === 'Connected') {
-        //chamar outrar tela
+        navigation.replace('Home');
       }
     } catch (erro) {
       console.log(erro);
